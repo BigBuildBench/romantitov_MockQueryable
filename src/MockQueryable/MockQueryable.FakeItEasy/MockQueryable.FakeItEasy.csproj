@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6</TargetFramework>
+    <PackageId>MockQueryable.FakeItEasy</PackageId>
+    <Authors>Roman Titov</Authors>
+	  <Description>
+		  Extension for mocking Entity Framework Core operations such ToListAsync, FirstOrDefaultAsync etc.
+		  When writing tests for your application it is often desirable to avoid hitting the database. The extension allows you to achieve this by creating a context – with behavior defined by your tests – that makes use of in-memory data.
+	  </Description>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+	  <PackageProjectUrl>https://github.com/romantitov/MockQueryable</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/romantitov/MockQueryable</RepositoryUrl>
+    <PackageTags>Mock EntityFrameworkCore Queryable mock EF EFCore UnitTests FakeItEasy</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <PackageReleaseNotes>
+		  #80  Altered namespace for extension method to revert a breaking change - Thanks @StevePy
+	  </PackageReleaseNotes>
+	  <Version>7.0.3</Version>
+	  <AssemblyVersion>7.0.0.3</AssemblyVersion>
+	  <FileVersion>7.0.0.3</FileVersion>
+    <Company></Company>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>logo.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Assets\logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+  	<None Include="..\..\..\README.md">
+  		<Pack>True</Pack>
+  		<PackagePath></PackagePath>
+  	</None>
+  </ItemGroup>
+</Project>
